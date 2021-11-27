@@ -21,3 +21,10 @@ export function AnchorLink ({ href, onClick, children, className, ...props }) {
   // tabindex='0' makes it Tab key accessible
   return <a {...props} className={className} onClick={click} tabindex='0'>{children}</a>
 }
+
+export function MailtoLink () {
+  const EMAIL_ADDRESS = 'example@example.com'
+  return <a href={`mailto:${EMAIL_ADDRESS}`}>
+    {EMAIL_ADDRESS}
+  </a>
+}

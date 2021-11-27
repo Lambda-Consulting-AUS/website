@@ -28,7 +28,7 @@ export default function Header () {
 
   const BurgerIcon = () => <MenuOutlined style={{ fontSize: 22, cursor: 'pointer' }} />
 
-  return (<div className='container'>
+  return <div className='container'>
     <header>
       <Row justify="space-between">
         <img src="logo-text.svg" width="200px" height="64px" />
@@ -51,5 +51,5 @@ export default function Header () {
         <MenuItem />
       </Drawer>
     </header>
-  </div>);
+  </div>
 };
