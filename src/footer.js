@@ -14,7 +14,7 @@ export default function Footer () {
             Copyright © Lambda Consulting 2022
           </Col>
           <Col span={11}>
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             Do you have any questions? Reach out to us at<br/><MailtoLink/>
           </Col>
         </Row>

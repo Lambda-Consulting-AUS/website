@@ -22,19 +22,6 @@ header {
     align-items: center;
     text-align: center;
   }
-
-  a {
-    font-size: 1.2rem;
-    color: #18216d;
-    transition: all 0.2s ease-in;
-    margin: 0.5rem 2rem;
-    text-align: center;
-
-    &:hover, &:focus {
-      text-decoration: rgb(255,130,92) wavy underline;
-      color: rgb(255,130,92);
-    }
-  }
 }
 
 .ant-drawer-body {
@@ -55,6 +42,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+header a, .ant-drawer-body a {
+  font-size: 1.2rem;
+  color: #18216d;
+  transition: all 0.2s ease-in;
+  margin: 0.5rem 2rem;
+  text-align: center;
+
+  &:hover, &:focus {
+    text-decoration: rgb(255,130,92) wavy underline;
+    color: rgb(255,130,92);
+  }
 }
 
 /* container: the header, footer and each section at the highest level;
