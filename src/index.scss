@@ -87,12 +87,16 @@ header a, .ant-drawer-body a {
 
 .content-section {
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 10rem 0 5rem;
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
   }
   & > div {
     margin-bottom: 3rem;
+  }
+  &.compact {
+    padding: 0;
+    padding-top: 4rem;
   }
 }
 
@@ -104,7 +108,13 @@ header a, .ant-drawer-body a {
 
 /* footer */
 
-footer {
+footer, .section-header {
   background: rgb(241,242,243);
   padding: 3rem 0;
+}
+
+.section-header h1 {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
 }

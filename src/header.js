@@ -14,8 +14,8 @@ export default function Header () {
       <Link href="#about" onClick={hideMenu}>
         About
       </Link>
-      <Link href="#mission" onClick={hideMenu}>
-        Mission
+      <Link href="#team" onClick={hideMenu}>
+        Our Team
       </Link>
       <Link href="#product" onClick={hideMenu}>
         Product

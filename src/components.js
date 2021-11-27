@@ -1,6 +1,6 @@
 
 import * as React from 'react'
-import { Row, Col } from 'antd'
+import { Row, Col, Avatar } from 'antd'
 
 export function MailtoLink () {
   const EMAIL_ADDRESS = 'lambda@example.com'
@@ -26,9 +26,9 @@ export function Link ({ href, onClick, children, ...props }) {
 // ContentBlock has two children and arranges them left to right on desktop
 // and top to bottom on mobile (screen width <= 576px)
 // If flipped is set, it will make it right to left on desktop without changing mobile
-export function ContentBlock ({ children, flipped }) {
+export function ContentBlock ({ children, flipped, className }) {
   children = flipped ? children.reverse() : children
-  const cl = 'content-section ' + (flipped ? 'flipped' : '')
+  const cl = 'content-section ' + (flipped ? 'flipped ' : '') + (className || '')
   return (
     <div className='container'>
       <Row justify='space-between' align='middle' className={cl}>
@@ -38,6 +38,30 @@ export function ContentBlock ({ children, flipped }) {
           </Col>
         ))}
       </Row>
+    </div>
+  )
+}
+
+export function Partner ({ children, name, photo, flipped }) {
+  return (
+    <ContentBlock flipped={flipped} className='compact'>
+      <>
+        <Avatar src={photo} alt={name} size={200} style={{ margin:'0 auto', display: 'block' }} />
+      </>
+      <>
+        <h2>{name}</h2>
+        {children}
+      </>
+    </ContentBlock>
+  )
+}
+
+export function SectionLabel ({ children, ...props }) {
+  return (
+    <div className='section-header' {...props}>
+      <div className='container'>
+        <h1>{children}</h1>
+      </div>
     </div>
   )
 }
