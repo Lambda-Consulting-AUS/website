@@ -19,7 +19,7 @@ export function AnchorLink ({ href, onClick, children, className, ...props }) {
   }
   className = className ? className + ' anchor-link' : 'anchor-link'
   // tabindex='0' makes it Tab key accessible
-  return <a {...props} className={className} onClick={click} tabindex='0'>{children}</a>
+  return <a {...props} className={className} onClick={click} tabIndex='0'>{children}</a>
 }
 
 export function MailtoLink () {
@@ -27,4 +27,15 @@ export function MailtoLink () {
   return <a href={`mailto:${EMAIL_ADDRESS}`}>
     {EMAIL_ADDRESS}
   </a>
+}
+
+export function Link ({ href, onClick, children, ...props }) {
+  const click = e => {
+    e.preventDefault()
+    if (onClick) onClick()
+    document.querySelector(href).scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+  return <a onClick={click} href={href} {...props}>{children}</a>
 }

@@ -22,6 +22,19 @@ header {
     align-items: center;
     text-align: center;
   }
+
+  a {
+    font-size: 1.2rem;
+    color: #18216d;
+    transition: all 0.2s ease-in;
+    margin: 0.5rem 2rem;
+    text-align: center;
+
+    &:hover, &:focus {
+      text-decoration: rgb(255,130,92) wavy underline;
+      color: rgb(255,130,92);
+    }
+  }
 }
 
 .ant-drawer-body {
@@ -85,19 +98,4 @@ header {
 footer {
   background: rgb(241,242,243);
   padding: 3rem 0;
-}
-
-/* components */
-
-.anchor-link {
-  font-size: 1.2rem;
-  color: #18216d;
-  transition: all 0.2s ease-in;
-  margin: 0.5rem 2rem;
-  text-align: center;
-
-  &:hover, &:focus {
-    text-decoration: rgb(255,130,92) wavy underline;
-    color: rgb(255,130,92);
-  }
 }

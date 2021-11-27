@@ -1,7 +1,7 @@
 
 import { useState } from "react"
 import { Row, Col, Drawer } from "antd"
-import { AnchorLink } from "./components"
+import { Link } from "./components"
 import { MenuOutlined } from "@ant-design/icons"
 
 export default function Header () {
@@ -11,18 +11,18 @@ export default function Header () {
 
   const MenuItem = () => (
     <>
-      <AnchorLink href="about" onClick={hideMenu}>
+      <Link href="#about" onClick={hideMenu}>
         About
-      </AnchorLink>
-      <AnchorLink href="mission" onClick={hideMenu}>
+      </Link>
+      <Link href="#mission" onClick={hideMenu}>
         Mission
-      </AnchorLink>
-      <AnchorLink href="product" onClick={hideMenu}>
+      </Link>
+      <Link href="#product" onClick={hideMenu}>
         Product
-      </AnchorLink>
-      <AnchorLink href="contact" onClick={hideMenu}>
+      </Link>
+      <Link href="#contact" onClick={hideMenu}>
         Contact
-      </AnchorLink>
+      </Link>
     </>
   )
 
@@ -31,7 +31,8 @@ export default function Header () {
   return <div className='container'>
     <header>
       <Row justify="space-between">
-        <img src="logo-text.svg" width="200px" height="64px" />
+        <img src="logo-text.svg" width="200px" height="64px"
+          alt='Lambda Consulting logo' />
         <div className='desktop'>
           <MenuItem />
         </div>
