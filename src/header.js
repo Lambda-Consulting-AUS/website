@@ -31,7 +31,7 @@ export default function Header () {
   return <div className='container'>
     <header>
       <Row justify="space-between">
-        <img src="logo-text.svg" width="200px" height="64px"
+        <img src="logo-text.svg" width="200" height="64"
           alt='Lambda Consulting logo' />
         <div className='desktop'>
           <MenuItem />

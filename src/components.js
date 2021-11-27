@@ -23,7 +23,7 @@ export function AnchorLink ({ href, onClick, children, className, ...props }) {
 }
 
 export function MailtoLink () {
-  const EMAIL_ADDRESS = 'example@example.com'
+  const EMAIL_ADDRESS = 'lambda@example.com'
   return <a href={`mailto:${EMAIL_ADDRESS}`}>
     {EMAIL_ADDRESS}
   </a>

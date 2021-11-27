@@ -8,7 +8,7 @@ export default function Footer () {
       <div className='container'>
         <Row justify="space-between">
           <Col span={11}>
-            <img src="logo-square.svg" width="150px" height="150px"
+            <img src="logo-square.svg" width="150" height="150"
               alt='Lambda Consulting logo' />
             <br/>
             Copyright © Lambda Consulting 2022
