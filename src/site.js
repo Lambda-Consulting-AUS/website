@@ -1,4 +1,9 @@
 
+import Header from './header'
+import "antd/dist/antd.css"
+
 export default function Site () {
-    return <h1>Hello</h1>;
+  return <>
+    <Header/>
+  </>
 }

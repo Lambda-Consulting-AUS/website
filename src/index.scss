@@ -1,0 +1,86 @@
+
+/* .desktop and .mobile classes for visibility */
+
+@media only screen and (max-width: 890px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  .mobile {
+    display: none;
+  }
+}
+
+/* header */
+
+header {
+  padding: 1rem 0.5rem;
+
+  .ant-row-space-between {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.ant-drawer-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-drawer-content-wrapper {
+  width: 300px !important;
+}
+
+.drawer-header {
+  margin: 0 1rem 2.5rem 1rem;
+  font-weight: 500;
+  font-size: 25px;
+  color: #404041;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* container: the header, footer and each section at the highest level;
+   adds margins based on screen size */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 60px;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: calc(100% - 68px);
+    padding: 0 30px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: calc(100% - 38px);
+    padding: 0 18px;
+  }
+
+  @media only screen and (max-width: 414px) {
+    max-width: 100%;
+    padding: 0 18px;
+  }
+}
+
+/* components */
+
+.anchor-link {
+  font-size: 1.2rem;
+  color: #18216d;
+  transition: all 0.2s ease-in;
+  margin: 0.5rem 2rem;
+  text-align: center;
+
+  &:hover, &:focus {
+    text-decoration: rgb(255,130,92) wavy underline;
+    color: rgb(255,130,92);
+  }
+}
