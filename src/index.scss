@@ -91,6 +91,15 @@ header a, .ant-drawer-body a {
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
   }
+  & > div {
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .content-section.flipped {
+    flex-wrap: wrap-reverse;
+  }
 }
 
 /* footer */
