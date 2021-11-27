@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Site from './site';
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Hello world</h1>
+    <Site />
   </React.StrictMode>,
   document.getElementById('root')
 );
