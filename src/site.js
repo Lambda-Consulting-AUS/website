@@ -126,7 +126,7 @@ export default function Site () {
       <p>He achieved a perfect 99.95 ATAR in high school and is now studying at the ANU.</p>
     </Partner>
 
-    <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg'
+    <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Partner'
       linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
       github='https://github.com/Oliver-Bagin'
       email='oliverbagin1@outlook.com'

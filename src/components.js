@@ -1,6 +1,6 @@
 
 import * as React from 'react'
-import { Row, Col, Avatar, Carousel, Descriptions } from 'antd'
+import { Row, Col, Avatar, Carousel } from 'antd'
 import { MailOutlined, PhoneOutlined, GithubFilled, LinkedinFilled } from '@ant-design/icons'
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import * as globals from './globals'
