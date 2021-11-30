@@ -5,8 +5,8 @@ import "antd/dist/antd.css"
 import './global.scss'
 import './index.scss'
 import {
-  ContentBlock, Partner, SectionLabel,
-  MailtoLink, PhoneLink, Link
+  ContentBlock, Partner, Project, ProjectCarousel, SectionLabel,
+  MailtoLink, PhoneLink, Link,
 } from './components'
 
 export default function Site () {
@@ -52,9 +52,16 @@ export default function Site () {
       <img src='/images/graphs.svg' alt='Charts on a slideshow' />
     </ContentBlock>
 
-    {/* <SectionLabel id='portfolio'>Portfolio</SectionLabel>
-      TODO
-     */}
+    <SectionLabel id='portfolio'>Portfolio</SectionLabel>
+
+    <ProjectCarousel>
+      <Project name='Project A'
+        description='An interesting project with lots to say' />
+      <Project name='Project B'
+        description='An interesting project with lots to say' />
+      <Project name='Project C'
+        description='An interesting project with lots to say' />
+    </ProjectCarousel>
 
     <SectionLabel id='team'>Our Team</SectionLabel>
 

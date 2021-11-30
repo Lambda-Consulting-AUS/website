@@ -1,7 +1,8 @@
 
 import * as React from 'react'
-import { Row, Col, Avatar } from 'antd'
+import { Row, Col, Avatar, Carousel, Descriptions } from 'antd'
 import { MailOutlined, PhoneOutlined, GithubFilled, LinkedinFilled } from '@ant-design/icons'
+import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import * as globals from './globals'
 
 export function MailtoLink () {
@@ -85,5 +86,30 @@ export function SectionLabel ({ children, ...props }) {
         <h1>{children}</h1>
       </div>
     </div>
+  )
+}
+
+export function Project ({ children, name, description, ...props }) {
+  return (
+    <div className='project' {...props}>
+      {children}
+      <div className='container'>
+        <div className='project-info'>
+          <h2>{name}</h2>
+          <p>{description}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function ProjectCarousel ({ children, ...props }) {
+  return (
+    <Carousel
+      autoplay={true} autoplaySpeed={5000} pauseOnDotsHover={true} pauseOnFocus={true} pauseOnHover={true}
+      arrows prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}
+      {...props}>
+      {children}
+    </Carousel>
   )
 }
