@@ -55,12 +55,53 @@ export default function Site () {
     <SectionLabel id='portfolio'>Portfolio</SectionLabel>
 
     <ProjectCarousel>
-      <Project name='Project A'
-        description='An interesting project with lots to say' />
-      <Project name='Project B'
-        description='An interesting project with lots to say' />
-      <Project name='Project C'
-        description='An interesting project with lots to say' />
+      <Project>
+        <h2>ANU Rocketry Test Stand</h2>
+        <p>
+          Web-based control panel for a rocket engine testing stand.
+          Supports plotting pressure valve data and opening/closing them in real-time.
+          Has fail-safes, supports multiple devices at once, works from up to 1km away.
+        </p>
+      </Project>
+      <Project>
+        <h2>Associate Law Search Engine</h2>
+        <p>
+          AI-powered natural language search engine for Australian case law,
+          made by our team and two other members.
+          See a <a href='https://distracted-brown-5a2407.netlify.app/'>live demo</a>.
+        </p>
+      </Project>
+      <Project>
+        <h2>5th Avenue Bar Membership App</h2>
+        <p>
+          Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra.
+        </p>
+      </Project>
+      <Project>
+        <h2>Class List Generator</h2>
+        <p>
+          Created for Arawang Primary School, Canberra.
+          Generates primary school classes satisfying constraints like
+          gender balance, ensuring students have at least one friend in their
+          new class, and many others.
+          See a <a href='https://oliverbalfour.github.io/ClassListsGenerator/'>live demo</a>.
+        </p>
+      </Project>
+      <Project>
+        <h2>Mirror App</h2>
+        <p>
+          Mobile friendly web app for task management and note taking that synchronises across devices.
+          See a <a href='https://oliverbalfour.github.io/Mirror/#/boards/main'>live demo</a>.
+        </p>
+      </Project>
+      <Project>
+        <h2>Diabetic Retinopathy Diagnosis</h2>
+        <p>
+          Eye disease diagnosis algorithm using AI computer vision.
+          Diagnoses patients from low quality photos of their retina with 80% accuracy.
+          See the <a href='https://github.com/OliverBalfour/DiabeticRetinopathy'>code</a> and <a href='https://drive.google.com/file/d/1rSDY9Rh5cgG4qr7wG3jjNtIcseixEiTM/view'>paper</a>.
+        </p>
+      </Project>
     </ProjectCarousel>
 
     <SectionLabel id='team'>Our Team</SectionLabel>

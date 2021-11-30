@@ -148,6 +148,9 @@ header a, .ant-drawer-body a {
   &, * {
     color: white;
   }
+  a {
+    color: #fca311;
+  }
   .container {
     height: 100%;
   }
@@ -159,6 +162,12 @@ header a, .ant-drawer-body a {
     margin-bottom: 0;
     // .container width - padding
     max-width: 1200px - 2 * 60px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .project-info p {
+    font-size: 1rem;
   }
 }
 

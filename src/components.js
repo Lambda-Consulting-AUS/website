@@ -89,14 +89,12 @@ export function SectionLabel ({ children, ...props }) {
   )
 }
 
-export function Project ({ children, name, description, ...props }) {
+export function Project ({ children, ...props }) {
   return (
     <div className='project' {...props}>
-      {children}
       <div className='container'>
         <div className='project-info'>
-          <h2>{name}</h2>
-          <p>{description}</p>
+          {children}
         </div>
       </div>
     </div>
