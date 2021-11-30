@@ -139,3 +139,9 @@ footer, .section-header {
   text-align: center;
   margin: 1rem;
 }
+
+@media only screen and (max-width: 576px) {
+  footer .ant-col:first-of-type {
+    margin-bottom: 2rem;
+  }
+}
