@@ -1,22 +1,22 @@
 
 import * as React from 'react'
 import { Row, Col, Avatar } from 'antd'
-import { MailOutlined, PhoneOutlined } from '@ant-design/icons'
+import { MailOutlined, PhoneOutlined, GithubFilled, LinkedinFilled } from '@ant-design/icons'
 import * as globals from './globals'
 
 export function MailtoLink () {
   return (
-    <Link href={`mailto:${globals.EMAIL_ADDRESS}`}>
+    <a href={`mailto:${globals.EMAIL_ADDRESS}`}>
       <MailOutlined /> {globals.EMAIL_ADDRESS}
-    </Link>
+    </a>
   )
 }
 
 export function PhoneLink () {
   return (
-    <Link href={`tel:${globals.PHONE_NUMBER}`}>
+    <a href={`tel:${globals.PHONE_NUMBER}`}>
       <PhoneOutlined /> {globals.PHONE_NUMBER}
-    </Link>
+    </a>
   )
 }
 
@@ -57,14 +57,21 @@ export function ContentBlock ({ children, flipped, className, ...props }) {
   )
 }
 
-export function Partner ({ children, name, photo, flipped }) {
+export function Partner ({ children, name, photo, flipped, title, linkedin, github, email, phone, ...props }) {
   return (
-    <ContentBlock flipped={flipped} className='compact'>
-      <>
-        <Avatar src={photo} alt={name} size={200} style={{ margin:'0 auto', display: 'block' }} />
-      </>
-      <>
+    <ContentBlock flipped={flipped} className='compact partner' {...props}>
+      <div className='profile'>
+        <Avatar src={photo} alt={name} size={200} />
         <h2>{name}</h2>
+        <em>{title}</em>
+        <div className='socials'>
+          <a href={linkedin}><LinkedinFilled /></a>
+          <a href={github}><GithubFilled /></a>
+          <a href={`mailto:${email}`}><MailOutlined /></a>
+          <a href={`tel:${phone}`}><PhoneOutlined /></a>
+        </div>
+      </div>
+      <>
         {children}
       </>
     </ContentBlock>

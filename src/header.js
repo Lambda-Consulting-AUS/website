@@ -14,11 +14,11 @@ export default function Header () {
       <Link href="#why-us" onClick={hideMenu}>
         Why us?
       </Link>
+      <Link href="#portfolio" onClick={hideMenu}>
+        Portfolio
+      </Link>
       <Link href="#team" onClick={hideMenu}>
         Our Team
-      </Link>
-      <Link href="#product" onClick={hideMenu}>
-        Product
       </Link>
       <Link href="#contact" onClick={hideMenu}>
         Contact

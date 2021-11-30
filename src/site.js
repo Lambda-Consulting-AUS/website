@@ -52,19 +52,37 @@ export default function Site () {
       <img src='/images/graphs.svg' alt='Charts on a slideshow' />
     </ContentBlock>
 
+    {/* <SectionLabel id='portfolio'>Portfolio</SectionLabel>
+      TODO
+     */}
+
     <SectionLabel id='team'>Our Team</SectionLabel>
 
-    <Partner name='Oliver Balfour' photo='/images/partners/balfour.jpg'>
+    <Partner name='Oliver Balfour' photo='/images/partners/balfour.jpg' title='Partner'
+      linkedin='https://www.linkedin.com/in/oliver-balfour-63b8a4199/'
+      github='https://github.com/OliverBalfour'
+      email='oliver.leo.balfour@gmail.com'
+      phone='+61 434 853 662'>
       <p>Oliver is a Software Developer at <a href='https://www.liquidinstruments.com/'>Liquid Instruments</a> where he develops Windows, macOS and iOS apps for scientific instruments.</p>
       <p>Oliver also has experience making websites and machine learning pipelines.</p>
       <p>He studies Computer Science and Mathematics in a Bachelor of Philosophy at the ANU, supported by the ANU All-Rounder Scholarship.</p>
       <p>He is currently the Vice-President of the <a href='https://cs.club.anu.edu.au/'>ANU Computer Science Students' Association</a>.</p>
     </Partner>
-    <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' flipped>
+
+    <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Partner' flipped
+      linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
+      github='https://github.com/pstefa1707'
+      email='parasstefans@hotmail.com'
+      phone='+61 432 049 137'>
       <p>Paras works as a Software Developer at CSIRO writing data science code running on supercomputers, such as modelling river flow in the Murray-Darling basin.</p>
       <p>He achieved a perfect 99.95 ATAR in high school and is now studying at the ANU.</p>
     </Partner>
-    <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg'>
+
+    <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg'
+      linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
+      github='https://github.com/Oliver-Bagin'
+      email='oliverbagin1@outlook.com'
+      phone='+61 481 880 377'>
       <p>Oliver achieved a state rank in year 12 software development in year 10. He works manufacturing and installing lifts. He made his own CNC machine from scratch in high school.</p>
     </Partner>
 

@@ -106,6 +106,27 @@ header a, .ant-drawer-body a {
   }
 }
 
+.partner .profile {
+  h2, div, .ant-avatar, em {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .ant-avatar {
+    margin: 0 auto 2rem auto;
+  }
+  h2 {
+    margin-bottom: 0.25rem;
+  }
+  em {
+    color: #333;
+  }
+  .socials a {
+    margin: 0 0.5rem;
+  }
+}
+
 /* footer */
 
 footer, .section-header {
