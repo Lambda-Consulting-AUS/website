@@ -22,16 +22,20 @@ export function PhoneLink () {
 
 // Like <a> except for #anchor links it smoothly scrolls to the element
 export function Link ({ href, onClick, children, ...props }) {
-  const click = e => {
-    e.preventDefault()
-    if (onClick) onClick()
-    let elem = document.querySelector(href)
-    if (elem)
-      elem.scrollIntoView({
-        behavior: 'smooth'
-      })
+  if (href.startsWith('#')) {
+    const click = e => {
+      e.preventDefault()
+      if (onClick) onClick()
+      let elem = document.querySelector(href)
+      if (elem)
+        elem.scrollIntoView({
+          behavior: 'smooth'
+        })
+    }
+    return <a onClick={click} href={href} {...props}>{children}</a>
+  } else {
+    return <a href={href} {...props}>{children}</a>
   }
-  return <a onClick={click} href={href} {...props}>{children}</a>
 }
 
 // ContentBlock has two children and arranges them left to right on desktop
