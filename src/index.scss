@@ -91,9 +91,6 @@ header a, .ant-drawer-body a {
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
   }
-  & > div {
-    margin-bottom: 3rem;
-  }
   &.compact {
     padding: 0;
     padding-top: 4rem;
@@ -103,6 +100,19 @@ header a, .ant-drawer-body a {
 @media only screen and (max-width: 576px) {
   .content-section.flipped {
     flex-wrap: wrap-reverse;
+  }
+  .content-section > div,
+  footer .ant-col {
+    margin-bottom: 3rem;
+  }
+  footer .ant-col:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  .content-section {
+    margin-bottom: 3rem;
   }
 }
 
@@ -138,10 +148,4 @@ footer, .section-header {
   width: 100%;
   text-align: center;
   margin: 1rem;
-}
-
-@media only screen and (max-width: 576px) {
-  footer .ant-col:first-of-type {
-    margin-bottom: 2rem;
-  }
 }
