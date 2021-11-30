@@ -1,6 +1,6 @@
 
 import { Row, Col } from "antd"
-import { MailtoLink } from "./components";
+import { MailtoLink, PhoneLink } from "./components"
 
 export default function Footer () {
   return (
@@ -15,7 +15,9 @@ export default function Footer () {
           </Col>
           <Col span={11}>
             <h2>Contact</h2>
-            Do you have any questions? Reach out to us at<br/><MailtoLink/>
+            <p style={{ fontSize: '1rem' }}>Do you have any questions? Reach out to us at</p>
+            <MailtoLink /><br />
+            <PhoneLink />
           </Col>
         </Row>
       </div>

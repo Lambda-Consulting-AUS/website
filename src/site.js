@@ -1,11 +1,10 @@
 
 import Header from './header'
 import Footer from './footer'
-import { Row, Col } from 'antd'
 import "antd/dist/antd.css"
 import './global.scss'
 import './index.scss'
-import { MailtoLink, ContentBlock, Partner, SectionLabel } from './components'
+import { ContentBlock, Partner, SectionLabel, MailtoLink, PhoneLink } from './components'
 
 export default function Site () {
   return <>
@@ -59,7 +58,7 @@ export default function Site () {
 
     <Partner name='Oliver Balfour' photo='/images/partners/balfour.jpg'>
       <p>Oliver is a Software Developer at <a href='https://www.liquidinstruments.com/'>Liquid Instruments</a> where he develops Windows, macOS and iOS interfaces for scientific instruments.</p>
-      <p>Oliver has experience making websites, mobile apps, desktop software, video games and machine learning pipelines.</p>
+      <p>Oliver has experience making websites, mobile apps, desktop software and machine learning pipelines.</p>
       <p>He studies Computer Science and Mathematics in a Bachelor of Philosophy at the ANU, supported by the ANU All-Rounder Scholarship.</p>
       <p>He is currently the Vice-President of the <a href='https://cs.club.anu.edu.au/'>ANU Computer Science Students' Association</a>.</p>
     </Partner>
@@ -73,15 +72,14 @@ export default function Site () {
 
     <ContentBlock>
       <>
-        <h1>Let's have a chat!</h1>
+        <h1>Enquire now</h1>
         <p>
-          Get in touch to speak about anything tech related!
-          We enjoy solving problems and helping clients.
+          Get in touch to let us know about your requirements, and we'll discuss paths forward.
         </p>
       </>
       <>
-        <div style={{ fontSize: 22 }}>E:&nbsp;<MailtoLink/></div>
-        <div style={{ fontSize: 22 }}>T:&nbsp;+61 000 000 000</div>
+        <p><MailtoLink /></p>
+        <p><PhoneLink /></p>
       </>
     </ContentBlock>
 

@@ -1,12 +1,23 @@
 
 import * as React from 'react'
 import { Row, Col, Avatar } from 'antd'
+import { MailOutlined, PhoneOutlined } from '@ant-design/icons'
+import * as globals from './globals'
 
 export function MailtoLink () {
-  const EMAIL_ADDRESS = 'lambda@example.com'
-  return <a href={`mailto:${EMAIL_ADDRESS}`}>
-    {EMAIL_ADDRESS}
-  </a>
+  return (
+    <Link href={`mailto:${globals.EMAIL_ADDRESS}`}>
+      <MailOutlined /> {globals.EMAIL_ADDRESS}
+    </Link>
+  )
+}
+
+export function PhoneLink () {
+  return (
+    <Link href={`tel:${globals.PHONE_NUMBER}`}>
+      <PhoneOutlined /> {globals.PHONE_NUMBER}
+    </Link>
+  )
 }
 
 // Like <a> except for #anchor links it smoothly scrolls to the element
