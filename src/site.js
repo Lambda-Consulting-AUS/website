@@ -55,11 +55,11 @@ export default function Site () {
     <SectionLabel id='portfolio'>Portfolio</SectionLabel>
 
     <ProjectCarousel>
-      <Project>
+      <Project src='/images/projects/test-stand-control-software.jpg'>
         <h2>ANU Rocketry Test Stand</h2>
         <p>
           Web-based control panel for a rocket engine testing stand.
-          Supports plotting pressure valve data and opening/closing them in real-time.
+          Supports plotting pressure valve data and opening/closing valves in real-time.
           Has fail-safes, supports multiple devices at once, works from up to 1km away.
         </p>
       </Project>

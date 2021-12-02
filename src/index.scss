@@ -143,7 +143,6 @@ header a, .ant-drawer-body a {
   background-color: #14213d;
   height: 80vh;
   font-size: 1rem;
-  padding: 1rem;
   position: relative;
   &, * {
     color: white;
@@ -153,15 +152,27 @@ header a, .ant-drawer-body a {
   }
   .container {
     height: 100%;
+    // bottom dots bar ends 42px above the bottom
+    // bottom dots bar is 26px above the bottom and 16px tall
+    margin-bottom: 26px * 2 + 12px;
+    margin-top: 26px;
+  }
+  .project-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
   }
   .project-info {
     position: absolute;
+    width: 100%;
+    background-color: #14213dcc;
     display: block;
-    // bottom dots bar ends 42px above the bottom
-    bottom: 42px;
-    margin-bottom: 0;
-    // .container width - padding
-    max-width: 1200px - 2 * 60px;
+    bottom: 0;
   }
 }
 
