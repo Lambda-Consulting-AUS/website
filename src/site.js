@@ -63,7 +63,7 @@ export default function Site () {
           Has fail-safes, supports multiple devices at once, works from up to 1km away.
         </p>
       </Project>
-      <Project>
+      <Project src='/images/projects/associate-law.jpg'>
         <h2>Associate Law Search Engine</h2>
         <p>
           AI-powered natural language search engine for Australian case law,
@@ -77,7 +77,7 @@ export default function Site () {
           Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra.
         </p>
       </Project>
-      <Project>
+      <Project src='/images/projects/class-lists-generator.jpg'>
         <h2>Class List Generator</h2>
         <p>
           Created for Arawang Primary School, Canberra.
@@ -87,7 +87,7 @@ export default function Site () {
           See a <a href='https://oliverbalfour.github.io/ClassListsGenerator/'>live demo</a>.
         </p>
       </Project>
-      <Project>
+      <Project src='/images/projects/mirror.jpg'>
         <h2>Mirror App</h2>
         <p>
           Mobile friendly web app for task management and note taking that synchronises across devices.
