@@ -89,11 +89,12 @@ export function SectionLabel ({ children, ...props }) {
   )
 }
 
-export function Project ({ children, ...props }) {
+export function Project ({ children, src, ...props }) {
   return (
     <div className='project' {...props}>
-      <div className='container'>
-        <div className='project-info'>
+      <div style={{ backgroundImage: `url(${src})` }} className='project-background' />
+      <div className='project-info'>
+        <div className='container'>
           {children}
         </div>
       </div>
