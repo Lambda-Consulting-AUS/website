@@ -9,7 +9,7 @@ import {
   MailtoLink, PhoneLink, Link,
 } from './components'
 
-export default function Site () {
+export default function Site() {
   return <>
 
     <Header />
@@ -122,8 +122,9 @@ export default function Site () {
       github='https://github.com/pstefa1707'
       email='parasstefans@hotmail.com'
       phone='+61 432 049 137'>
-      <p>Paras works as a Software Developer at CSIRO writing data science code running on supercomputers, such as modelling river flow in the Murray-Darling basin.</p>
-      <p>He achieved a perfect 99.95 ATAR in high school and is now studying at the ANU.</p>
+      <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he peforms large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
+      <p>He also has experience with backend web development, automation software and data procesing pipelines.</p>
+      <p>He achieved a perfect 99.95 ATAR in high school and is now studying Advanced Computing (Research &#38; Development) at the ANU, supported by the National University Scholarship.</p>
     </Partner>
 
     <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Partner'
