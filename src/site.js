@@ -16,10 +16,12 @@ export default function Site() {
 
     <ContentBlock>
       <>
-        <h1>Custom software solutions for problems big and small</h1>
+        <h1>Software Solutions and Consulting</h1>
         <p>
-          Websites, mobile apps, and software designed, implemented and maintained.
-          We will work alongside you to develop solutions to your problems.
+          Lambda Consulting is here to make creating your website, mobile application or other business software as easy and affordable as possible.
+        </p>
+        <p>
+          We will work alongside you to develop custom software solutions to your problems.
         </p>
       </>
       <img src='/images/developer.svg' alt='Software developer drinking coffee' />
@@ -29,21 +31,21 @@ export default function Site() {
 
     <ContentBlock flipped>
       <>
-        <h1>Experience with web, mobile and desktop software</h1>
+        <h1>Our Experience</h1>
         <p>
           Our team has a diverse skill set spanning all major platforms. We've built mobile apps, websites,
-          search engines, control panels for rockets and scientific instruments, smart contracts,
-          machine learning algorithms and circuit boards among many other projects.
+          search engines, digital control panels for rockets, smart contracts, machine learning algorithms
+          and control software for precision instruments as well as circuit boards soon to be orbiting the planet.
         </p>
       </>
       <img src='/images/launch.svg' alt='Rocket launch' />
     </ContentBlock>
     <ContentBlock>
       <>
-        <h1>Determine what you need quickly and easily</h1>
+        <h1>Got some questions?</h1>
         <p>
-          Our team will meet with you to identify your requirements and design a plan of attack at no cost.
-          We provide free advice, just give us a call!
+          Our team is happy to meet with other business at no cost to see if our services are a good fit for you.
+          We provide free quotes, just give us a call.
         </p>
         <p>
           <Link href='#contact'>Contact</Link>
@@ -122,8 +124,8 @@ export default function Site() {
       github='https://github.com/pstefa1707'
       email='parasstefans@hotmail.com'
       phone='+61 432 049 137'>
-      <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he peforms large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
-      <p>He also has experience with backend web development, automation software and data procesing pipelines.</p>
+      <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he performs large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
+      <p>He also has experience with backend web development, automation software and data processing pipelines.</p>
       <p>He achieved a perfect 99.95 ATAR in high school and is now studying Advanced Computing (Research &#38; Development) at the ANU, supported by the National University Scholarship.</p>
     </Partner>
 
@@ -132,7 +134,9 @@ export default function Site() {
       github='https://github.com/Oliver-Bagin'
       email='oliverbagin1@outlook.com'
       phone='+61 481 880 377'>
-      <p>Oliver achieved a state rank in year 12 software development in year 10. He works manufacturing and installing lifts. He made his own CNC machine from scratch in high school.</p>
+      <p>Oliver is studying Advanced Computing and Mathematics at ANU. He completed year 12 software development two years early achieving a state rank.</p>
+      <p>Oliver works in manufacturing and fabrication as well as software. He has written programs ranging from factory optimisation software to websites to Unity games. He has also undertaken many electronic projects including making a CNC machine and electronics for ANU Rocketry.</p>
+      <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate.</p>
     </Partner>
 
     <ContentBlock id='contact'>

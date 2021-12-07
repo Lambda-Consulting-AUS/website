@@ -43,16 +43,20 @@ export function Link ({ href, onClick, children, ...props }) {
 // and top to bottom on mobile (screen width <= 576px)
 // If flipped is set, it will make it right to left on desktop without changing mobile
 export function ContentBlock ({ children, flipped, className, ...props }) {
-  children = flipped ? children.reverse() : children
+  children = [
+    <Col lg={12} md={12} sm={11} xs={24}>
+      {children[0]}
+    </Col>,
+    <Col lg={11} md={11} sm={11} xs={24}>
+      {children[1]}
+    </Col>
+  ]
+  if (flipped) children = children.reverse()
   const cl = 'content-section ' + (flipped ? 'flipped ' : '') + (className || '')
   return (
     <div className='container'>
       <Row justify='space-between' align='middle' className={cl} {...props}>
-        {children.map(child => (
-          <Col lg={11} md={11} sm={11} xs={24}>
-            {child}
-          </Col>
-        ))}
+        {children}
       </Row>
     </div>
   )
