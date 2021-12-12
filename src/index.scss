@@ -1,4 +1,8 @@
 
+$primary: #14213d;
+$secondary: rgb(255,130,92);
+$line-width: 5px; // horizontal lines around headers and sections
+
 /* .desktop and .mobile classes for visibility */
 
 @media only screen and (max-width: 890px) {
@@ -14,6 +18,10 @@
 }
 
 /* header */
+
+.header-container {
+  border-bottom: $line-width solid $secondary;
+}
 
 header {
   padding: 1rem 0.5rem;
@@ -52,8 +60,8 @@ header a, .ant-drawer-body a {
   text-align: center;
 
   &:hover, &:focus {
-    text-decoration: rgb(255,130,92) wavy underline;
-    color: rgb(255,130,92);
+    text-decoration: $secondary wavy underline;
+    color: $secondary;
   }
 }
 
@@ -140,7 +148,7 @@ header a, .ant-drawer-body a {
 /* carousel: projects / portfolio */
 
 .ant-carousel .project {
-  background-color: #14213d;
+  background-color: $primary;
   height: 80vh;
   font-size: 1rem;
   position: relative;
@@ -170,7 +178,7 @@ header a, .ant-drawer-body a {
   .project-info {
     position: absolute;
     width: 100%;
-    background-color: #14213dcc;
+    background-color: rgba($primary, 0.8);
     display: block;
     bottom: 0;
   }
@@ -220,6 +228,11 @@ header a, .ant-drawer-body a {
 footer, .section-header {
   background: rgb(241,242,243);
   padding: 3rem 0;
+  border-top: $line-width solid $primary;
+}
+
+.section-header {
+  border-bottom: $line-width solid $secondary;
 }
 
 .section-header h1 {

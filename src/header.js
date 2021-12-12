@@ -28,29 +28,31 @@ export default function Header () {
 
   const BurgerIcon = () => <MenuOutlined style={{ fontSize: 22, cursor: 'pointer' }} />
 
-  return <div className='container'>
-    <header>
-      <Row justify="space-between">
-        <img src="logo-text.svg" width="200" height="64"
-          alt='Lambda Consulting logo' />
-        <div className='desktop'>
-          <MenuItem />
-        </div>
-        <div className='mobile' onClick={toggleMenu}>
-          <BurgerIcon />
-        </div>
-      </Row>
-      <Drawer closable={false} visible={visible} onClose={hideMenu} className='mobile'>
-        <div className='drawer-header' onClick={toggleMenu}>
-          <Col span={12}>
-            <h5>Menu</h5>
-          </Col>
-          <Col span={12} style={{ textAlign: 'right' }}>
+  return <div class='header-container'>
+    <div className='container header'>
+      <header>
+        <Row justify="space-between">
+          <img src="logo-text.svg" width="200" height="64"
+            alt='Lambda Consulting logo' />
+          <div className='desktop'>
+            <MenuItem />
+          </div>
+          <div className='mobile' onClick={toggleMenu}>
             <BurgerIcon />
-          </Col>
-        </div>
-        <MenuItem />
-      </Drawer>
-    </header>
+          </div>
+        </Row>
+        <Drawer closable={false} visible={visible} onClose={hideMenu} className='mobile'>
+          <div className='drawer-header' onClick={toggleMenu}>
+            <Col span={12}>
+              <h5>Menu</h5>
+            </Col>
+            <Col span={12} style={{ textAlign: 'right' }}>
+              <BurgerIcon />
+            </Col>
+          </div>
+          <MenuItem />
+        </Drawer>
+      </header>
+    </div>
   </div>
 };
