@@ -111,8 +111,10 @@ export default function Site() {
     <Partner name='Oliver Balfour' photo='/images/partners/balfour.jpg' title='Partner'
       linkedin='https://www.linkedin.com/in/oliver-balfour-63b8a4199/'
       github='https://github.com/OliverBalfour'
-      email='oliver.leo.balfour@gmail.com'
-      phone='+61 434 853 662'>
+      email='oliver.balfour@lambdaconsulting.com.au'
+      // email='oliver.leo.balfour@gmail.com'
+      // phone='+61 434 853 662'
+    >
       <p>Oliver is a Software Developer at <a href='https://www.liquidinstruments.com/'>Liquid Instruments</a> where he develops Windows, macOS and iOS apps for scientific instruments.</p>
       <p>Oliver also has experience making websites and machine learning pipelines.</p>
       <p>He studies Computer Science and Mathematics in a Bachelor of Philosophy at the ANU, supported by the ANU All-Rounder Scholarship.</p>
@@ -122,8 +124,10 @@ export default function Site() {
     <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Partner' flipped
       linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
       github='https://github.com/pstefa1707'
-      email='parasstefans@hotmail.com'
-      phone='+61 432 049 137'>
+      email='paras.stefanopoulos@lambdaconsulting.com.au'
+      // email='parasstefans@hotmail.com'
+      // phone='+61 432 049 137'
+    >
       <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he performs large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
       <p>He also has experience with backend web development, automation software and data processing pipelines.</p>
       <p>He achieved a perfect 99.95 ATAR in high school and is now studying Advanced Computing (Research &#38; Development) at the ANU, supported by the National University Scholarship.</p>
@@ -132,8 +136,10 @@ export default function Site() {
     <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Partner'
       linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
       github='https://github.com/Oliver-Bagin'
-      email='oliverbagin1@outlook.com'
-      phone='+61 481 880 377'>
+      email='oliver.bagin@lambdaconsulting.com.au'
+      // email='oliverbagin1@outlook.com'
+      // phone='+61 481 880 377'
+    >
       <p>Oliver is studying Advanced Computing and Mathematics at ANU. He completed year 12 software development two years early achieving a state rank.</p>
       <p>Oliver works in manufacturing and fabrication as well as software. He has written programs ranging from factory optimisation software to websites to Unity games. He has also undertaken many electronic projects including making a CNC machine and electronics for ANU Rocketry.</p>
       <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate.</p>

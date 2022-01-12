@@ -1,4 +1,4 @@
 
-export const EMAIL_ADDRESS = 'lambda@example.com'
+export const EMAIL_ADDRESS = 'sales@lambdaconsulting.com.au'
 
-export const PHONE_NUMBER = '+61 400 000 000'
+export const PHONE_NUMBER = ''

@@ -6,7 +6,7 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import * as globals from './globals'
 
 export function MailtoLink () {
-  return (
+  return globals.EMAIL_ADDRESS && (
     <a href={`mailto:${globals.EMAIL_ADDRESS}`}>
       <MailOutlined /> {globals.EMAIL_ADDRESS}
     </a>
@@ -14,7 +14,7 @@ export function MailtoLink () {
 }
 
 export function PhoneLink () {
-  return (
+  return globals.PHONE_NUMBER && (
     <a href={`tel:${globals.PHONE_NUMBER}`}>
       <PhoneOutlined /> {globals.PHONE_NUMBER}
     </a>
@@ -70,10 +70,10 @@ export function Partner ({ children, name, photo, flipped, title, linkedin, gith
         <h2>{name}</h2>
         <em>{title}</em>
         <div className='socials'>
-          <a href={linkedin}><LinkedinFilled /></a>
-          <a href={github}><GithubFilled /></a>
-          <a href={`mailto:${email}`}><MailOutlined /></a>
-          <a href={`tel:${phone}`}><PhoneOutlined /></a>
+          {linkedin && <a href={linkedin}><LinkedinFilled /></a>}
+          {github && <a href={github}><GithubFilled /></a>}
+          {email && <a href={`mailto:${email}`}><MailOutlined /></a>}
+          {phone && <a href={`tel:${phone}`}><PhoneOutlined /></a>}
         </div>
       </div>
       <>
