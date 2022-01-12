@@ -18,7 +18,7 @@ export default function Site() {
       <>
         <h1>Software Solutions and Consulting</h1>
         <p>
-          Lambda Consulting is here to make creating your website, mobile application or other business software as easy and affordable as possible.
+          Lambda Consulting is here to help create your website, mobile application or other business software as easily and affordably as possible.
         </p>
         <p>
           We will work alongside you to develop custom software solutions to your problems.
@@ -42,10 +42,9 @@ export default function Site() {
     </ContentBlock>
     <ContentBlock>
       <>
-        <h1>Got some questions?</h1>
+        <h1>Any Questions?</h1>
         <p>
-          Our team is happy to meet with other business at no cost to see if our services are a good fit for you.
-          We provide free quotes, just give us a call.
+          Our team is happy to meet at no cost to see if our services are a good fit for you and provide a quote.
         </p>
         <p>
           <Link href='#contact'>Contact</Link>
@@ -73,7 +72,7 @@ export default function Site() {
           See a <a href='https://distracted-brown-5a2407.netlify.app/'>live demo</a>.
         </p>
       </Project>
-      <Project>
+      <Project src='/images/projects/5th.png'>
         <h2>5th Avenue Bar Membership App</h2>
         <p>
           Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra.
@@ -96,7 +95,7 @@ export default function Site() {
           See a <a href='https://oliverbalfour.github.io/Mirror/#/boards/main'>live demo</a>.
         </p>
       </Project>
-      <Project>
+      <Project src='/images/projects/diabetic-retinopathy.jpg'>
         <h2>Diabetic Retinopathy Diagnosis</h2>
         <p>
           Eye disease diagnosis algorithm using AI computer vision.
@@ -130,7 +129,7 @@ export default function Site() {
     >
       <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he performs large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
       <p>He also has experience with backend web development, automation software and data processing pipelines.</p>
-      <p>He achieved a perfect 99.95 ATAR in high school and is now studying Advanced Computing (Research &#38; Development) at the ANU, supported by the National University Scholarship.</p>
+      <p>He is studying Advanced Computing (Research &#38; Development) at the ANU, supported by the National University Scholarship. He achieved a perfect 99.95 ATAR in high school.</p>
     </Partner>
 
     <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Partner'
@@ -140,9 +139,9 @@ export default function Site() {
       // email='oliverbagin1@outlook.com'
       // phone='+61 481 880 377'
     >
-      <p>Oliver is studying Advanced Computing and Mathematics at ANU. He completed year 12 software development two years early achieving a state rank.</p>
-      <p>Oliver works in manufacturing and fabrication as well as software. He has written programs ranging from factory optimisation software to websites to Unity games. He has also undertaken many electronic projects including making a CNC machine and electronics for ANU Rocketry.</p>
-      <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate.</p>
+      <p>Oliver is studying Advanced Computing and Mathematics at ANU. He has written programs ranging from factory optimisation software to websites to Unity games.</p>
+      <p>Oliver works in manufacturing and fabrication as well as software. He has undertaken many electronic projects including making a CNC machine and electronics for ANU Rocketry.</p>
+      <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate. He completed year 12 software development two years early achieving a state rank.</p>
     </Partner>
 
     <ContentBlock id='contact'>
