@@ -124,7 +124,7 @@ export default function Site() {
     <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Partner' flipped
       linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
       github='https://github.com/pstefa1707'
-      email='paras.stefanopoulos@lambdaconsulting.com.au'
+      email='paras@lambdaconsulting.com.au'
       // email='parasstefans@hotmail.com'
       // phone='+61 432 049 137'
     >

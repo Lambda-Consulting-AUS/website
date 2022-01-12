@@ -18,7 +18,7 @@ export default function Footer () {
             <p style={{ fontSize: '1rem' }}>Do you have any questions? Reach out to us at</p>
             <MailtoLink /><br />
             <PhoneLink />
-            <p style={{ fontSize: '1rem', fontFamily: 'sans-serif', marginTop: 20, color: '#333' }}>ABN: 62 973 907 508</p>
+            <p style={{ fontSize: '1rem', marginTop: 20}}>ABN: <code>62 973 907 508</code></p>
           </Col>
         </Row>
       </div>
