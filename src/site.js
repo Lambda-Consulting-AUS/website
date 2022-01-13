@@ -125,7 +125,7 @@ export default function Site() {
       github='https://github.com/pstefa1707'
       email='paras@lambdaconsulting.com.au'
       // email='parasstefans@hotmail.com'
-      // phone='+61 432 049 137'
+      phone='+61 432 049 137'
     >
       <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he performs large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
       <p>He also has experience with backend web development, automation software and data processing pipelines.</p>
@@ -140,7 +140,7 @@ export default function Site() {
       // phone='+61 481 880 377'
     >
       <p>Oliver is studying Advanced Computing and Mathematics at ANU. He has written programs ranging from factory optimisation software to websites to Unity games.</p>
-      <p>Oliver works in manufacturing and fabrication as well as software. He has undertaken many electronic projects including making a CNC machine and electronics for ANU Rocketry.</p>
+      <p>Oliver works in manufacturing and fabrication as well as software. He has undertaken many electronic projects including building a CNC machine and electronics for ANU Rocketry.</p>
       <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate. He completed year 12 software development two years early achieving a state rank.</p>
     </Partner>
 
