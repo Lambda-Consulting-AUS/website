@@ -78,53 +78,14 @@ export default function Site() {
           Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra.
         </p>
       </Project>
-      <Project src='/images/projects/class-lists-generator.jpg'>
-        <h2>Class List Generator</h2>
-        <p>
-          Created for Arawang Primary School, Canberra.
-          Generates primary school classes satisfying constraints like
-          gender balance, ensuring students have at least one friend in their
-          new class, and many others.
-          See a <a href='https://oliverbalfour.github.io/ClassListsGenerator/'>live demo</a>.
-        </p>
-      </Project>
-      <Project src='/images/projects/mirror.jpg'>
-        <h2>Mirror App</h2>
-        <p>
-          Mobile friendly web app for task management and note taking that synchronises across devices.
-          See a <a href='https://oliverbalfour.github.io/Mirror/#/boards/main'>live demo</a>.
-        </p>
-      </Project>
-      <Project src='/images/projects/diabetic-retinopathy.jpg'>
-        <h2>Diabetic Retinopathy Diagnosis</h2>
-        <p>
-          Eye disease diagnosis algorithm using AI computer vision.
-          Diagnoses patients from low quality photos of their retina with 80% accuracy.
-          See the <a href='https://github.com/OliverBalfour/DiabeticRetinopathy'>code</a> and <a href='https://drive.google.com/file/d/1rSDY9Rh5cgG4qr7wG3jjNtIcseixEiTM/view'>paper</a>.
-        </p>
-      </Project>
     </ProjectCarousel>
 
     <SectionLabel id='team'>Our Team</SectionLabel>
-
-    <Partner name='Oliver Balfour' photo='/images/partners/balfour.jpg' title='Partner'
-      linkedin='https://www.linkedin.com/in/oliver-balfour-63b8a4199/'
-      github='https://github.com/OliverBalfour'
-      email='oliver.balfour@lambdaconsulting.com.au'
-      // email='oliver.leo.balfour@gmail.com'
-      // phone='+61 434 853 662'
-    >
-      <p>Oliver is a Software Developer at <a href='https://www.liquidinstruments.com/'>Liquid Instruments</a> where he develops Windows, macOS and iOS apps for scientific instruments.</p>
-      <p>Oliver also has experience making websites and machine learning pipelines.</p>
-      <p>He studies Computer Science and Mathematics in a Bachelor of Philosophy at the ANU, supported by the ANU All-Rounder Scholarship.</p>
-      <p>He is currently the Vice-President of the <a href='https://cs.club.anu.edu.au/'>ANU Computer Science Students' Association</a>.</p>
-    </Partner>
 
     <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Partner' flipped
       linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
       github='https://github.com/pstefa1707'
       email='paras@lambdaconsulting.com.au'
-      // email='parasstefans@hotmail.com'
       phone='+61 432 049 137'
     >
       <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he performs large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
@@ -136,10 +97,9 @@ export default function Site() {
       linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
       github='https://github.com/Oliver-Bagin'
       email='oliver.bagin@lambdaconsulting.com.au'
-      // email='oliverbagin1@outlook.com'
       // phone='+61 481 880 377'
     >
-      <p>Oliver is studying Advanced Computing and Mathematics at ANU. He has written programs ranging from factory optimisation software to websites to Unity games.</p>
+      <p>Oliver is studying Advanced Computing and Mathematics at ANU. He has written programs ranging from factory optimization software to websites to Unity games.</p>
       <p>Oliver works in manufacturing and fabrication as well as software. He has undertaken many electronic projects including building a CNC machine and electronics for ANU Rocketry.</p>
       <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate. He completed year 12 software development two years early achieving a state rank.</p>
     </Partner>
