@@ -88,8 +88,7 @@ export default function Site() {
       email='paras@lambdaconsulting.com.au'
       phone='+61 432 049 137'
     >
-      <p>Paras is a Software Developer at <a href="https://www.csiro.au/en/">CSIRO</a> where he performs large scale computation to derive and investigate hydrological properties of the Murray Darling Basin.</p>
-      <p>He also has experience with backend web development, automation software and data processing pipelines.</p>
+      <p>Paras has experience with backend web development, automation software and data processing pipelines.</p>
       <p>He is studying Advanced Computing (Research &#38; Development) at the ANU, supported by the National University Scholarship. He achieved a perfect 99.95 ATAR in high school.</p>
     </Partner>
 
