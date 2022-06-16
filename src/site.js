@@ -18,7 +18,7 @@ export default function Site() {
       <>
         <h1>Software Solutions and Consulting</h1>
         <p>
-          Lambda Consulting is here to help create your website, mobile application or other business software as easily and affordably as possible.
+          Lambda Consulting is here to help in creating bespoke software. Be-it bots for discord, websites, mobile apps, blockchain tech, etc.
         </p>
         <p>
           We will work alongside you to develop custom software solutions to your problems.
@@ -56,26 +56,40 @@ export default function Site() {
     <SectionLabel id='portfolio'>Portfolio</SectionLabel>
 
     <ProjectCarousel>
-      <Project src='/images/projects/test-stand-control-software.jpg'>
-        <h2>ANU Rocketry Test Stand</h2>
+      <Project src='https://app.ebisusbay.com/img/background/Ebisus-bg-1_L.webp'>
+        <h2>Ebisu's Bay Sales Bot</h2>
         <p>
-          Web-based control panel for a rocket engine testing stand.
-          Supports plotting pressure valve data and opening/closing valves in real-time.
-          Has fail-safes, supports multiple devices at once, works from up to 1km away.
-        </p>
-      </Project>
-      <Project src='/images/projects/associate-law.jpg'>
-        <h2>Associate Law Search Engine</h2>
-        <p>
-          AI-powered natural language search engine for Australian case law,
-          made by our team and two other members.
-          See a <a href='https://distracted-brown-5a2407.netlify.app/'>live demo</a>.
+          Discord bot for tracking sales on Ebisu's Bay Marketplace. This software allows users to listen for certain events on the blockchain and generates alerts. Thousands of users; robust, maintainable and scalable code.
+          More information can be seen <a href='https://faq.ebisusbay.com/misc-topics/discord-sales-bot'>here</a>.
         </p>
       </Project>
       <Project src='/images/projects/5th.png'>
         <h2>5th Avenue Bar Membership App</h2>
         <p>
           Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra.
+        </p>
+      </Project>
+      <Project src='https://raqoon.io/wp-content/uploads/2022/04/The-Apiens.jpg'>
+        <h2>Whitelist Wallet Checker</h2>
+        <p>
+          This discord bot was custom developed for <a href='https://theapiens.com/'>The Apiens</a>.
+          The software, assisted thousands of users to confirm they had joined the whitelist for the project successfully.
+        </p>
+      </Project>
+      <Project src='https://whitelistpy.lambdaconsulting.com.au/static/media/multiple-whitelists.a589e034.png'>
+        <h2>NFT WhitelistPy</h2>
+        <p>
+          Discord bot for managing NFT whitelists.
+          This piece of software has over 100k users, boasting perfect uptime and great features.
+          More information can be seen <a href='https://whitelistpy.lambdaconsulting.com.au/'>here</a>.
+        </p>
+      </Project>
+      <Project src='/images/projects/test-stand-control-software.jpg'>
+        <h2>ANU Rocketry Test Stand</h2>
+        <p>
+          Web-based control panel for a rocket engine testing stand.
+          Supports plotting pressure valve data and opening/closing valves in real-time.
+          Has fail-safes, supports multiple devices at once, works from up to 1km away.
         </p>
       </Project>
     </ProjectCarousel>
