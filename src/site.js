@@ -66,7 +66,7 @@ export default function Site() {
       <Project src='/images/projects/5th.png'>
         <h2>5th Avenue Bar Membership App</h2>
         <p>
-          Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra.
+          Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra. Purchases are tracked via customers "linked" cards and rewards are given respectively.
         </p>
       </Project>
       <Project src='https://raqoon.io/wp-content/uploads/2022/04/The-Apiens.jpg'>
