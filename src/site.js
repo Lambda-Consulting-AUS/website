@@ -95,7 +95,7 @@ export default function Site() {
       <Project src='/images/projects/CCMC.png'>
         <h2>Cabinet Cost and Material Calculator</h2>
         <p>
-          Custom calculator for generating pricing and cutting sheets for arbitrary cabinets.
+          Custom calculator that generates pricing and cutting sheets for arbitrary dimension cabinets.
           Created for <a href='https://www.showfront.com.au/'>Showfront Display Systems</a> - a leading display cabinet maker in Australia.
         </p>
       </Project>
