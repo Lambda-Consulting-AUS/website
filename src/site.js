@@ -84,7 +84,7 @@ export default function Site() {
           More information can be seen <a href='https://whitelistpy.lambdaconsulting.com.au/'>here</a>.
         </p>
       </Project>
-      <Project src='/images/projects/test-stand-control-software.jpg'>
+      <Project src='/images/projects/test-stand-control-software.png'>
         <h2>ANU Rocketry Test Stand</h2>
         <p>
           Web-based control panel for a rocket engine testing stand.
