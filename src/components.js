@@ -106,6 +106,14 @@ export function Project ({ children, src, ...props }) {
   )
 }
 
+export function Logo ({ src, ...props }) {
+  return (
+    <a className='logocell' {...props}>
+      <img src={src} className='logo-background' alt={src}/>
+    </a>
+  )
+}
+
 export function ProjectCarousel ({ children, ...props }) {
   return (
     <Carousel

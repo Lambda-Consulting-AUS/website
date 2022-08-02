@@ -1,7 +1,7 @@
 
 $primary: #14213d;
 $secondary: rgb(255,130,92);
-$line-width: 5px; // horizontal lines around headers and sections
+$line-width: 2px; // horizontal lines around headers and sections
 
 /* .desktop and .mobile classes for visibility */
 
@@ -20,7 +20,7 @@ $line-width: 5px; // horizontal lines around headers and sections
 /* header */
 
 .header-container {
-  border-bottom: $line-width solid $secondary;
+  border-bottom: $line-width solid $primary;
 }
 
 header {
@@ -148,7 +148,8 @@ header a, .ant-drawer-body a {
 /* carousel: projects / portfolio */
 
 .ant-carousel .project {
-  background-color: $primary;
+  background-color: white;
+  margin-top: 16px;
   height: 80vh;
   font-size: 1rem;
   position: relative;
@@ -183,6 +184,28 @@ header a, .ant-drawer-body a {
     bottom: 0;
   }
 }
+
+.logo {
+  background-color: rgb(241,242,243);
+  height: 20vw;
+  font-size: 1rem;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  &, * {
+    color: white;
+  }
+  a {
+    color: #fca311;
+  }
+}
+
+.logo-background {
+  height: 10vw;
+  filter: grayscale(1);
+}
+
 
 @media only screen and (max-width: 576px) {
   .project-info p {
@@ -232,7 +255,7 @@ footer, .section-header {
 }
 
 .section-header {
-  border-bottom: $line-width solid $secondary;
+ 
 }
 
 .section-header h1 {

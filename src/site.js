@@ -6,7 +6,7 @@ import './global.scss'
 import './index.scss'
 import {
   ContentBlock, Partner, Project, ProjectCarousel, SectionLabel,
-  MailtoLink, PhoneLink, Link,
+  MailtoLink, PhoneLink, Link, Logo, LogoCarousel,
 } from './components'
 
 export default function Site() {
@@ -25,32 +25,6 @@ export default function Site() {
         </p>
       </>
       <img src='/images/developer.svg' alt='Software developer drinking coffee' />
-    </ContentBlock>
-
-    <SectionLabel id='why-us'>Why Us?</SectionLabel>
-
-    <ContentBlock flipped>
-      <>
-        <h1>Our Experience</h1>
-        <p>
-          Our team has a diverse skill set spanning all major platforms. We've built mobile apps, websites,
-          search engines, digital control panels for rockets, smart contracts, machine learning algorithms
-          and control software for precision instruments as well as circuit boards soon to be orbiting the planet.
-        </p>
-      </>
-      <img src='/images/launch.svg' alt='Rocket launch' />
-    </ContentBlock>
-    <ContentBlock>
-      <>
-        <h1>Any Questions?</h1>
-        <p>
-          Our team is happy to meet at no cost to see if our services are a good fit for you and provide a quote.
-        </p>
-        <p>
-          <Link href='#contact'>Contact</Link>
-        </p>
-      </>
-      <img src='/images/graphs.svg' alt='Charts on a slideshow' />
     </ContentBlock>
 
     <SectionLabel id='portfolio'>Portfolio</SectionLabel>
@@ -82,13 +56,6 @@ export default function Site() {
           Discord bot for managing NFT whitelists.
           This piece of software has over 100k users, boasting perfect uptime and great features.
           More information can be seen <a href='https://whitelistpy.lambdaconsulting.com.au/'>here</a>.
-        </p>
-      </Project>
-      <Project src='https://raqoon.io/wp-content/uploads/2022/04/The-Apiens.jpg'>
-        <h2>Whitelist Wallet Checker</h2>
-        <p>
-          This discord bot was custom developed for <a href='https://theapiens.com/'>The Apiens</a>.
-          The software, assisted thousands of users to confirm they had joined the whitelist for the project successfully.
         </p>
       </Project>
       <Project src='/images/projects/test-stand-control-software.png'>
@@ -123,6 +90,19 @@ export default function Site() {
       <p>Oliver works in manufacturing and fabrication as well as software. He has undertaken many electronic projects including building a CNC machine and electronics for ANU Rocketry.</p>
       <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate. He completed year 12 software development two years early achieving a state rank.</p>
     </Partner>
+
+    <div className='logo'>
+      <Logo src='/images/logos/Showfront.png'>
+      </Logo>
+      <Logo src='/images/logos/5th.png'>
+      </Logo>
+      <Logo src='/images/logos/Ebusis.svg'>
+      </Logo>
+      <Logo src='/images/logos/ANUR.png'>
+      </Logo>
+      <Logo src='./logo-square.svg'>
+      </Logo>
+    </div>
 
     <ContentBlock id='contact'>
       <>
