@@ -11,14 +11,14 @@ export default function Header () {
 
   const MenuItem = () => (
     <>
+      <Link href="#portfolio" onClick={hideMenu}>
+        Portfolio
+      </Link>
       <Link href="#team" onClick={hideMenu}>
         Our Team
       </Link>
       <Link href="#contact" onClick={hideMenu}>
         Contact
-      </Link>
-      <Link href="#portfolio" onClick={hideMenu}>
-        Portfolio
       </Link>
     </>
   )
