@@ -27,6 +27,63 @@ export default function Site() {
       <img src='/images/developer.svg' alt='Software developer drinking coffee' />
     </ContentBlock>
 
+    <div className='logo'>
+      <Logo src='/images/logos/Showfront.png'>
+      </Logo>
+      <Logo src='/images/logos/5th.png'>
+      </Logo>
+      <Logo src='/images/logos/Ebusis.svg'>
+      </Logo>
+      <Logo src='/images/logos/ANUR.png'>
+      </Logo>
+      <Logo src='./logo-square.svg'>
+      </Logo>
+    </div>
+
+    <SectionLabel id='team'>Our Team</SectionLabel>
+
+    <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Partner' flipped
+      linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
+      github='https://github.com/pstefa1707'
+      email='paras@lambdaconsulting.com.au'
+      phone='+61 432 049 137'
+    >
+      <p>Paras is one of the founding members of Lambda Consulting. With experience in data analysis, software development and modelling, he has brought innovation to countless products and services he has worked on.</p>
+
+      <p>A small project he started in his college dormitory went on to be one of Lambda’s first success stories, WhitelistPy. Having reached over 130k users from over 80 countries before being acquired. Best in class, it changed the way NFT wallet addresses were collected by online communities globally.</p>
+
+    </Partner>
+
+    <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Partner'
+      linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
+      github='https://github.com/Oliver-Bagin'
+      email='oliver.bagin@lambdaconsulting.com.au'
+      phone='+61 481 880 377'
+    >
+      <p>Oliver has studied Advanced Computing and Mathematics at ANU. He has written programs ranging from factory optimization software to websites to Unity games. </p>
+      <p>With an affinity for business, electronics, hands on manufacturing and design - Oli has also built factory optimisation software, physical electronic solutions and customer-facing programs used by thousands.</p>
+    </Partner>
+
+    <div className='container container_cus'>
+      <>
+        <p>Together, Oliver and Paras have managed many contracts. From the design and development stage through to production and managing tens of thousands of users. </p> 
+        <p>Their software has innovated the methods by which communities gather data on discord, the expertise requirement for cost-calculations in factory settings and produced insights into how Australia's ecological systems operate.</p>
+      </>
+    </div>
+
+    <ContentBlock id='contact'>
+      <>
+        <h1>Enquire now</h1>
+        <p>
+          Get in touch to let us know about your requirements and we'll discuss paths forward.
+        </p>
+      </>
+      <>
+        <p><MailtoLink /></p>
+        <p><PhoneLink /></p>
+      </>
+    </ContentBlock>
+    
     <SectionLabel id='portfolio'>Portfolio</SectionLabel>
 
     <ProjectCarousel>
@@ -67,55 +124,6 @@ export default function Site() {
         </p>
       </Project>
     </ProjectCarousel>
-
-    <SectionLabel id='team'>Our Team</SectionLabel>
-
-    <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Partner' flipped
-      linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
-      github='https://github.com/pstefa1707'
-      email='paras@lambdaconsulting.com.au'
-      phone='+61 432 049 137'
-    >
-      <p>Paras has experience with backend web development, automation software and data processing pipelines.</p>
-      <p>He is studying Advanced Computing (Research &#38; Development) at the ANU, supported by the National University Scholarship. He achieved a perfect 99.95 ATAR in high school.</p>
-    </Partner>
-
-    <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Partner'
-      linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
-      github='https://github.com/Oliver-Bagin'
-      email='oliver.bagin@lambdaconsulting.com.au'
-      // phone='+61 481 880 377'
-    >
-      <p>Oliver is studying Advanced Computing and Mathematics at ANU. He has written programs ranging from factory optimization software to websites to Unity games.</p>
-      <p>Oliver works in manufacturing and fabrication as well as software. He has undertaken many electronic projects including building a CNC machine and electronics for ANU Rocketry.</p>
-      <p>He has a keen interest in business administration and law. He was a Kwong Lee Dow Scholars as well as a Youth Advisor in his Victorian electorate. He completed year 12 software development two years early achieving a state rank.</p>
-    </Partner>
-
-    <div className='logo'>
-      <Logo src='/images/logos/Showfront.png'>
-      </Logo>
-      <Logo src='/images/logos/5th.png'>
-      </Logo>
-      <Logo src='/images/logos/Ebusis.svg'>
-      </Logo>
-      <Logo src='/images/logos/ANUR.png'>
-      </Logo>
-      <Logo src='./logo-square.svg'>
-      </Logo>
-    </div>
-
-    <ContentBlock id='contact'>
-      <>
-        <h1>Enquire now</h1>
-        <p>
-          Get in touch to let us know about your requirements and we'll discuss paths forward.
-        </p>
-      </>
-      <>
-        <p><MailtoLink /></p>
-        <p><PhoneLink /></p>
-      </>
-    </ContentBlock>
 
     <Footer />
 
