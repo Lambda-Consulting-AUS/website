@@ -27,18 +27,45 @@ export default function Site() {
       <img src='/images/developer.svg' alt='Software developer drinking coffee' />
     </ContentBlock>
 
-    <div className='logo'>
-      <Logo src='/images/logos/Showfront.png'>
-      </Logo>
-      <Logo src='/images/logos/5th.png'>
-      </Logo>
-      <Logo src='/images/logos/Ebusis.svg'>
-      </Logo>
-      <Logo src='/images/logos/ANUR.png'>
-      </Logo>
-      <Logo src='./logo-square.svg'>
-      </Logo>
-    </div>
+    <SectionLabel id='portfolio'>Portfolio</SectionLabel>
+<ProjectCarousel>
+  <Project src='/images/projects/CCMC.png'>
+    <h2>Cabinet Cost and Material Calculator</h2>
+    <p>
+      Custom calculator that generates pricing and cutting sheets for arbitrary dimension cabinets.
+      Created for <a href='https://www.showfront.com.au/'>Showfront Display Systems</a> - the leading display cabinet maker in Australia.
+    </p>
+  </Project>
+  <Project src='/images/projects/5th.png'>
+    <h2>5th Avenue Bar Membership App</h2>
+    <p>
+      Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra. Purchases are tracked via customers "linked" cards and rewards are given respectively.
+    </p>
+  </Project>
+  <Project src='https://app.ebisusbay.com/img/background/Ebisus-bg-1_L.webp'>
+    <h2>Ebisu's Bay Sales Bot</h2>
+    <p>
+      Discord bot for tracking sales on Ebisu's Bay Marketplace. This software allows users to listen for certain events on the blockchain and generates alerts. Thousands of users; robust, maintainable and scalable code.
+      More information can be seen <a href='https://faq.ebisusbay.com/misc-topics/discord-sales-bot'>here</a>.
+    </p>
+  </Project>
+  <Project src='/images/projects/LambdaWhitelistpy.png'>
+    <h2>NFT WhitelistPy</h2>
+    <p>
+      Discord bot for managing NFT whitelists.
+      This piece of software has over 100k users, boasting perfect uptime and great features.
+      More information can be seen <a href='https://whitelistpy.lambdaconsulting.com.au/'>here</a>.
+    </p>
+  </Project>
+  <Project src='/images/projects/test-stand-control-software.png'>
+    <h2>ANU Rocketry Test Stand</h2>
+    <p>
+      Web-based control panel for a rocket engine testing stand.
+      Supports plotting pressure valve data and opening/closing valves in real-time.
+      Has fail-safes, supports multiple devices at once, works from up to 1km away.
+    </p>
+  </Project>
+</ProjectCarousel>
 
     <SectionLabel id='team'>Our Team</SectionLabel>
 
@@ -83,47 +110,19 @@ export default function Site() {
         <p><PhoneLink /></p>
       </>
     </ContentBlock>
-    
-    <SectionLabel id='portfolio'>Portfolio</SectionLabel>
 
-    <ProjectCarousel>
-      <Project src='/images/projects/CCMC.png'>
-        <h2>Cabinet Cost and Material Calculator</h2>
-        <p>
-          Custom calculator that generates pricing and cutting sheets for arbitrary dimension cabinets.
-          Created for <a href='https://www.showfront.com.au/'>Showfront Display Systems</a> - the leading display cabinet maker in Australia.
-        </p>
-      </Project>
-      <Project src='/images/projects/5th.png'>
-        <h2>5th Avenue Bar Membership App</h2>
-        <p>
-          Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra. Purchases are tracked via customers "linked" cards and rewards are given respectively.
-        </p>
-      </Project>
-      <Project src='https://app.ebisusbay.com/img/background/Ebisus-bg-1_L.webp'>
-        <h2>Ebisu's Bay Sales Bot</h2>
-        <p>
-          Discord bot for tracking sales on Ebisu's Bay Marketplace. This software allows users to listen for certain events on the blockchain and generates alerts. Thousands of users; robust, maintainable and scalable code.
-          More information can be seen <a href='https://faq.ebisusbay.com/misc-topics/discord-sales-bot'>here</a>.
-        </p>
-      </Project>
-      <Project src='/images/projects/LambdaWhitelistpy.png'>
-        <h2>NFT WhitelistPy</h2>
-        <p>
-          Discord bot for managing NFT whitelists.
-          This piece of software has over 100k users, boasting perfect uptime and great features.
-          More information can be seen <a href='https://whitelistpy.lambdaconsulting.com.au/'>here</a>.
-        </p>
-      </Project>
-      <Project src='/images/projects/test-stand-control-software.png'>
-        <h2>ANU Rocketry Test Stand</h2>
-        <p>
-          Web-based control panel for a rocket engine testing stand.
-          Supports plotting pressure valve data and opening/closing valves in real-time.
-          Has fail-safes, supports multiple devices at once, works from up to 1km away.
-        </p>
-      </Project>
-    </ProjectCarousel>
+    <div className='logo'>
+      <Logo src='/images/logos/Showfront.png'>
+      </Logo>
+      <Logo src='/images/logos/5th.png'>
+      </Logo>
+      <Logo src='/images/logos/Ebusis.svg'>
+      </Logo>
+      <Logo src='/images/logos/ANUR.png'>
+      </Logo>
+      <Logo src='./logo-square.svg'>
+      </Logo>
+    </div>
 
     <Footer />
 
