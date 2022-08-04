@@ -54,7 +54,9 @@ export default function Team() {
   linkedin='https://www.linkedin.com/in/charles-o-neill/'
   email='charles@lambdaconsulting.com.au'
     >
-      <p>Tuckwell Scholar at the Australian National University and a resident at Burgmann College. Currently undertaking a Bachelor of Economics (Honours) and Bachelor of Science (Maj: Mathematical Modelling; Min: Applied Statistics, Computer Science).</p>
+      <p>Charles O’Neill (Tuckwell Scholar) (Science, Economics) is a data science partner of Lambda Consulting. With a focus on data analysis, forecasting and machine learning, Charles has extensive experience in both research and industry. Charles works for Macuject, a Melbourne-based startup developing AI to fight retinal blindness, and has held several research roles at ANU and CSIRO.</p>
+
+      <p>Charles has worked on a number of related projects, including long-term bushfire prediction for key Australian stakeholders, natural language processing for medical data extraction, and several predictive vision models for pharmaceutical companies. Charles is currently researching Koopman autoencoders and their advantages in modelling natural disasters such as cyclones.</p>
     </Partner>
 
     {/* <div className='container container_cus'>
