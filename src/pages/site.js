@@ -18,12 +18,12 @@ export default function Site() {
 
     <ContentBlock>
       <>
-        <h1>Software Solutions and Consulting</h1>
+        <h1>Software and Data Consulting</h1>
         <p>
-          Lambda Consulting is here to help in creating bespoke software. Be-it bots for discord, websites, mobile apps, blockchain tech, etc.
+          Lambda Consulting is here to help in creating bespoke software and delivering custom data solutions. Be-it websites, mobile apps, blockchain tech, big data, environmental modelling, etc.
         </p>
         <p>
-          We will work alongside you to develop custom software solutions to your problems.
+          We will work alongside you to develop custom software and data solutions to your problems.
         </p>
       </>
       <img src='/images/developer.svg' alt='Software developer drinking coffee' />
