@@ -5,7 +5,7 @@ import { MailOutlined, PhoneOutlined, GithubFilled, LinkedinFilled } from '@ant-
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import * as globals from './globals'
 
-export function MailtoLink () {
+export function MailtoLink() {
   return globals.EMAIL_ADDRESS && (
     <a href={`mailto:${globals.EMAIL_ADDRESS}`}>
       <MailOutlined /> {globals.EMAIL_ADDRESS}
@@ -13,7 +13,7 @@ export function MailtoLink () {
   )
 }
 
-export function PhoneLink () {
+export function PhoneLink() {
   return globals.PHONE_NUMBER && (
     <a href={`tel:${globals.PHONE_NUMBER}`}>
       <PhoneOutlined /> {globals.PHONE_NUMBER}
@@ -22,7 +22,7 @@ export function PhoneLink () {
 }
 
 // Like <a> except for #anchor links it smoothly scrolls to the element
-export function Link ({ href, onClick, children, ...props }) {
+export function Link({ href, onClick, children, ...props }) {
   if (href.startsWith('#')) {
     const click = e => {
       e.preventDefault()
@@ -42,7 +42,7 @@ export function Link ({ href, onClick, children, ...props }) {
 // ContentBlock has two children and arranges them left to right on desktop
 // and top to bottom on mobile (screen width <= 576px)
 // If flipped is set, it will make it right to left on desktop without changing mobile
-export function ContentBlock ({ children, flipped, className, ...props }) {
+export function ContentBlock({ children, flipped, className, ...props }) {
   children = [
     <Col lg={12} md={12} sm={11} xs={24}>
       {children[0]}
@@ -62,7 +62,32 @@ export function ContentBlock ({ children, flipped, className, ...props }) {
   )
 }
 
-export function Partner ({ children, name, photo, flipped, title, linkedin, github, email, phone, ...props }) {
+export function PartnerArray({ children, className, ...props }) {
+  children = [
+    <Col lg={6} md={12} sm={12} xs={24}>
+      {children[0]}
+    </Col>,
+    <Col lg={6} md={12} sm={12} xs={24}>
+      {children[1]}
+    </Col>,
+    <Col lg={6} md={12} sm={12} xs={24}>
+      {children[2]}
+    </Col>,
+    <Col lg={6} md={12} sm={12} xs={24}>
+      {children[3]}
+    </Col>
+  ]
+  const cl = 'compact partner' + (className || '')
+  return (
+    <div className='partner-container'>
+      <Row justify='space-between' align='top' className={cl} {...props}>
+        {children}
+      </Row>
+    </div>
+  )
+}
+
+export function Partner({ children, name, photo, flipped, title, linkedin, github, email, phone, ...props }) {
   return (
     <ContentBlock flipped={flipped} className='compact partner' {...props}>
       <div className='profile'>
@@ -83,7 +108,25 @@ export function Partner ({ children, name, photo, flipped, title, linkedin, gith
   )
 }
 
-export function SectionLabel ({ children, ...props }) {
+export function SmallPartner({ children, name, photo, flipped, title, linkedin, github, email, phone, ...props }) {
+  return (
+    <>
+        <div className='profile'>
+          <Avatar src={photo} alt={name} size={200} />
+          <h2>{name}</h2>
+          <em>{title}</em>
+          <div className='socials'>
+            {linkedin && <a href={linkedin}><LinkedinFilled /></a>}
+            {github && <a href={github}><GithubFilled /></a>}
+            {email && <a href={`mailto:${email}`}><MailOutlined /></a>}
+            {phone && <a href={`tel:${phone}`}><PhoneOutlined /></a>}
+          </div>
+        </div>
+    </>
+  )
+}
+
+export function SectionLabel({ children, ...props }) {
   return (
     <div className='section-header' {...props}>
       <div className='container'>
@@ -93,7 +136,17 @@ export function SectionLabel ({ children, ...props }) {
   )
 }
 
-export function Project ({ children, src, ...props }) {
+export function SectionSubLabel({ children, ...props }) {
+  return (
+    <div className='section-subheader' {...props}>
+      <div className='container'>
+        <h2>{children}</h2>
+      </div>
+    </div>
+  )
+}
+
+export function Project({ children, src, ...props }) {
   return (
     <div className='project' {...props}>
       <div style={{ backgroundImage: `url(${src})` }} className='project-background' />
@@ -106,15 +159,15 @@ export function Project ({ children, src, ...props }) {
   )
 }
 
-export function Logo ({ src, ...props }) {
+export function Logo({ src, ...props }) {
   return (
     <a className='logocell' {...props}>
-      <img src={src} className='logo-background' alt={src}/>
+      <img src={src} className='logo-background' alt={src} />
     </a>
   )
 }
 
-export function ProjectCarousel ({ children, ...props }) {
+export function ProjectCarousel({ children, ...props }) {
   return (
     <Carousel
       autoplay={true} autoplaySpeed={5000} pauseOnDotsHover={true} pauseOnFocus={true} pauseOnHover={true}

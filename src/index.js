@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Site from './site';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Site from './pages/site';
+import Team from './pages/team'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Site />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Site />} />
+        <Route path="/team" element={<Team />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

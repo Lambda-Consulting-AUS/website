@@ -1,13 +1,15 @@
 
-import Header from './header'
-import Footer from './footer'
+import Header from '../header'
+import Footer from '../footer'
 import "antd/dist/antd.css"
-import './global.scss'
-import './index.scss'
+import '../global.scss'
+import '../index.scss'
 import {
-  ContentBlock, Partner, Project, ProjectCarousel, SectionLabel,
-  MailtoLink, PhoneLink, Link, Logo, LogoCarousel,
-} from './components'
+  ContentBlock, Partner, SmallPartner, PartnerArray, Project, ProjectCarousel, SectionLabel,
+  MailtoLink, PhoneLink, Link, Logo, LogoCarousel, SectionSubLabel,
+} from '../components';
+import {Button} from 'antd';
+import { RightOutlined } from '@ant-design/icons';
 
 export default function Site() {
   return <>
@@ -26,6 +28,36 @@ export default function Site() {
       </>
       <img src='/images/developer.svg' alt='Software developer drinking coffee' />
     </ContentBlock>
+
+    <SectionLabel id='team'>Our Team</SectionLabel>
+
+<PartnerArray>
+<SmallPartner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Founder' flipped
+  linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
+  github='https://github.com/pstefa1707'
+  email='paras@lambdaconsulting.com.au'
+  phone='+61 432 049 137'
+/>
+<SmallPartner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Founder'
+  linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
+  github='https://github.com/Oliver-Bagin'
+  email='oliver.bagin@lambdaconsulting.com.au'
+  phone='+61 481 880 377'
+  />
+<SmallPartner name='Jack Miller' photo='/images/partners/jack.jpg' title='Data and AI Partner' flipped
+  linkedin='https://www.linkedin.com/in/jack-miller-8574211aa/'
+  email='jack@lambdaconsulting.com.au'
+/>
+<SmallPartner name='Charles O&#39;Neil' photo='/images/partners/charles.jpeg' title='Data and AI Partner' flipped
+  linkedin='https://www.linkedin.com/in/charles-o-neill/'
+  email='charles@lambdaconsulting.com.au'
+/>
+</PartnerArray>
+<div>    
+  <Button type="primary" size="large" id="center-button" icon={<RightOutlined />} href='/team'>
+    Read More
+  </Button>
+</div>
 
     <SectionLabel id='portfolio'>Portfolio</SectionLabel>
 <ProjectCarousel>
@@ -67,37 +99,6 @@ export default function Site() {
   </Project>
 </ProjectCarousel>
 
-    <SectionLabel id='team'>Our Team</SectionLabel>
-
-    <Partner name='Paras Stefanopoulos' photo='/images/partners/paras.jpg' title='Partner' flipped
-      linkedin='https://www.linkedin.com/in/paras-stefanopoulos-738bb8208/'
-      github='https://github.com/pstefa1707'
-      email='paras@lambdaconsulting.com.au'
-      phone='+61 432 049 137'
-    >
-      <p>Paras is one of the founding members of Lambda Consulting. With experience in data analysis, software development and modelling, he has brought innovation to countless products and services he has worked on.</p>
-
-      <p>A small project he started in his college dormitory went on to be one of Lambda’s first success stories, WhitelistPy. Having reached over 130k users from over 80 countries before being acquired. Best in class, it changed the way NFT wallet addresses were collected by online communities globally.</p>
-
-    </Partner>
-
-    <Partner name='Oliver Bagin' photo='/images/partners/bagin.jpg' title='Partner'
-      linkedin='https://www.linkedin.com/in/oliver-bagin-7915a9210/'
-      github='https://github.com/Oliver-Bagin'
-      email='oliver.bagin@lambdaconsulting.com.au'
-      phone='+61 481 880 377'
-    >
-      <p>Oliver has studied Advanced Computing and Mathematics at ANU. He has written programs ranging from factory optimization software to websites to Unity games. </p>
-      <p>With an affinity for business, electronics, hands on manufacturing and design - Oli has also built factory optimisation software, physical electronic solutions and customer-facing programs used by thousands.</p>
-    </Partner>
-
-    <div className='container container_cus'>
-      <>
-        <p>Together, Oliver and Paras have managed many contracts. From the design and development stage through to production and managing tens of thousands of users. </p> 
-        <p>Their software has innovated the methods by which communities gather data on discord, the expertise requirement for cost-calculations in factory settings and produced insights into how Australia's ecological systems operate.</p>
-      </>
-    </div>
-
     <ContentBlock id='contact'>
       <>
         <h1>Enquire now</h1>
@@ -111,7 +112,9 @@ export default function Site() {
       </>
     </ContentBlock>
 
-    <div className='logo'>
+    <SectionSubLabel>Our Partners</SectionSubLabel>
+    <div className='logo-banner'>
+      <div className='logo'>
       <Logo src='/images/logos/Showfront.png'>
       </Logo>
       <Logo src='/images/logos/5th.png'>
@@ -122,6 +125,7 @@ export default function Site() {
       </Logo>
       <Logo src='./logo-square.svg'>
       </Logo>
+      </div>
     </div>
 
     <Footer />

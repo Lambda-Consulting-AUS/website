@@ -11,7 +11,7 @@ export default function Header () {
 
   const MenuItem = () => (
     <>
-      <Link href="#portfolio" onClick={hideMenu}>
+      <Link href="/#portfolio" onClick={hideMenu}>
         Portfolio
       </Link>
       <Link href="#team" onClick={hideMenu}>

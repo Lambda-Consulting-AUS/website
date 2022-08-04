@@ -95,7 +95,7 @@ header a, .ant-drawer-body a {
 
 .content-section {
   position: relative;
-  padding: 10rem 0 5rem;
+  padding: 8rem 0 5rem;
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
   }
@@ -185,13 +185,20 @@ header a, .ant-drawer-body a {
   }
 }
 
-.logo {
+.logo-banner {
   background-color: rgb(241,242,243);
-  height: 20vw;
   font-size: 1rem;
   position: relative;
-  justify-content: space-around;
   align-items: center;
+  padding-bottom: 3rem;
+}
+
+.logo {
+  height: 10vw;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
   display: flex;
   &, * {
     color: white;
@@ -254,12 +261,38 @@ footer, .section-header {
   border-top: $line-width solid $primary;
 }
 
-.section-header {
- 
-}
-
 .section-header h1 {
   width: 100%;
   text-align: center;
   margin: 1rem;
+}
+
+.section-subheader h2 {
+ width: 100%;
+ text-align: center;
+ margin: 1rem
+}
+
+.section-subheader {
+  background: rgb(241,242,243);
+  padding: 1rem 0;
+  border-top: $line-width solid $primary;
+}
+
+#center-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  max-width: 12rem;
+}
+
+.partner-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 2rem;
 }
