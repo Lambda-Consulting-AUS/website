@@ -29,8 +29,8 @@ export default function Header () {
     <div className='container header'>
       <header>
         <Row justify="space-between">
-          <img src="logo-text.svg" width="200" height="64"
-            alt='Lambda Consulting logo' />
+          <a href='/'><img src="logo-text.svg" width="200" height="64"
+            alt='Lambda Consulting logo'/> </a>
           <div className='desktop'>
             <MenuItem />
           </div>
