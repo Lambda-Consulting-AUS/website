@@ -111,7 +111,7 @@ export function Partner({ children, name, photo, flipped, title, linkedin, githu
 export function SmallPartner({ children, name, photo, flipped, title, linkedin, github, email, phone, ...props }) {
   return (
     <>
-        <div className='profile'>
+        <div className='profile small-partner'>
           <Avatar src={photo} alt={name} size={200} />
           <h2>{name}</h2>
           <em>{title}</em>
