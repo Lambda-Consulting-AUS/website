@@ -14,10 +14,10 @@ export default function Header () {
       <Link href="/#portfolio" onClick={hideMenu}>
         Portfolio
       </Link>
-      <Link href="/#team" onClick={hideMenu}>
+      <Link href="/team" onClick={hideMenu}>
         Our Team
       </Link>
-      <Link href="#contact" onClick={hideMenu}>
+      <Link href="/#contact" onClick={hideMenu}>
         Contact
       </Link>
     </>
