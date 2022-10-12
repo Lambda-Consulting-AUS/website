@@ -72,6 +72,7 @@ export default function Site() {
     <h2>5th Avenue Bar Membership App</h2>
     <p>
       Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra. Purchases are tracked via customers "linked" cards and rewards are given respectively.
+      Download the app <a href='https://apps.apple.com/au/app/5th-ave/id1641026943'>here</a>! 
     </p>
   </Project>
   <Project src='https://app.ebisusbay.com/img/background/Ebisus-bg-1_L.webp'>
