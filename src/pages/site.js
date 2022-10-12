@@ -61,18 +61,18 @@ export default function Site() {
 
     <SectionLabel id='portfolio'>Portfolio</SectionLabel>
 <ProjectCarousel>
-  <Project src='/images/projects/CCMC.png'>
-    <h2>Cabinet Cost and Material Calculator</h2>
-    <p>
-      Custom calculator that generates pricing and cutting sheets for arbitrary dimension cabinets.
-      Created for <a href='https://www.showfront.com.au/'>Showfront Display Systems</a> - the leading display cabinet maker in Australia.
-    </p>
-  </Project>
   <Project src='/images/projects/5th.png'>
     <h2>5th Avenue Bar Membership App</h2>
     <p>
       Membership and rewards app (Android &amp; iOS) integrating with Square POS for a bar in Canberra. Purchases are tracked via customers "linked" cards and rewards are given respectively.
       Download the app <a href='https://apps.apple.com/au/app/5th-ave/id1641026943'>here</a>! 
+    </p>
+  </Project>
+  <Project src='/images/projects/CCMC.png'>
+    <h2>Cabinet Cost and Material Calculator</h2>
+    <p>
+      Custom calculator that generates pricing and cutting sheets for arbitrary dimension cabinets.
+      Created for <a href='https://www.showfront.com.au/'>Showfront Display Systems</a> - the leading display cabinet maker in Australia.
     </p>
   </Project>
   <Project src='https://app.ebisusbay.com/img/background/Ebisus-bg-1_L.webp'>
