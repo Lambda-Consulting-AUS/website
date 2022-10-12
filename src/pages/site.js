@@ -86,8 +86,8 @@ export default function Site() {
     <h2>NFT WhitelistPy</h2>
     <p>
       Discord bot for managing NFT whitelists.
-      This piece of software has over 100k users, boasting perfect uptime and great features.
-      More information can be seen <a href='https://whitelistpy.lambdaconsulting.com.au/'>here</a>.
+      Grew this SaaS to over 130k users over a span of 5 months. Has since been acquired by a U.S. company.
+      The software can be seen <a href='https://whitelistpy.com'>here</a>.
     </p>
   </Project>
   <Project src='/images/projects/test-stand-control-software.png'>
